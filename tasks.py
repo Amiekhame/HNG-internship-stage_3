@@ -26,7 +26,7 @@ log_path = '/var/log/messaging_system.log'
 print(f"Log file path: {log_path}")
 
 logging.basicConfig(
-    filename=log_path,
+    filename=home/vagrant/messaging_system.log,
     format='%(asctime)s - %(levelname)s - %(message)s',
     level=logging.DEBUG  # Set to DEBUG to capture all log levels
 )

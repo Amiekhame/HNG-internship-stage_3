@@ -26,7 +26,7 @@ log_path = '/var/log/messaging_system.log'
 print(f"Log file path: {log_path}")
 
 logging.basicConfig(
-    filename=log_path,
+    filename=home/vagrant/messaging_system.log,
     format='%(asctime)s - %(levelname)s - %(message)s',
     level=logging.DEBUG  # Set to DEBUG to capture all log levels
 )
@@ -99,5 +99,5 @@ def get_task_status(task_id):
             'message': 'Task status unknown'
         }), 500
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
